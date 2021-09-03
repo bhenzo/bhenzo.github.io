@@ -4,10 +4,18 @@ $(function () {
     // ------------------------------------------------------ //
     // Masonary
     // ------------------------------------------------------ //
-    $('.grid').masonry({
-      itemSelector: '.grid-item',
-      columnWidth: 0
+
+
+    var $container = $('.grid');
+
+    $container.imagesLoaded(function () {
+        $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: 0
+          });
     });
+
+   
 
 
     // ------------------------------------------------------ //
