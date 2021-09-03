@@ -9,6 +9,7 @@ $(function () {
     var $container = $('.grid');
 
     $container.imagesLoaded(function () {
+        console.log("Imagenes cargadas")
         $('.grid').masonry({
             itemSelector: '.grid-item',
             columnWidth: 0
