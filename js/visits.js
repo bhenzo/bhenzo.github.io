@@ -8,7 +8,7 @@ let hitVisit = (location) => {
         type: 'GET',
         crossDomain: true,
         dataType: 'jsonp',
-        url: "bhenzo.herokuapp.com?location="+location,
+        url: "//bhenzo.herokuapp.com?location="+location,
         success: function(jsondata){
             console.log("Visita registrada")
            
