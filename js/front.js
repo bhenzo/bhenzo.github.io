@@ -1,12 +1,20 @@
 $(function () {
 
 
+    //Mi contador de visitas enzomatic
+    hitVisit("main_page");
+
     // ------------------------------------------------------ //
     // Masonary
     // ------------------------------------------------------ //
 
 
     var $container = $('.grid');
+
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 0
+      });
 
     $container.imagesLoaded(function () {
         console.log("Imagenes cargadas")
