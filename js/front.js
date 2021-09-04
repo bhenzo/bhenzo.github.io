@@ -1,8 +1,7 @@
 $(function () {
 
 
-    //Mi contador de visitas enzomatic
-    hitVisit("main_page");
+ 
 
     // ------------------------------------------------------ //
     // Masonary
