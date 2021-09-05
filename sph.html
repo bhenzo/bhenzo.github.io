@@ -63,18 +63,18 @@
         <div class="col-md-8 col-lg-9 content-column white-background">
           <div class="small-navbar d-flex d-md-none">
             <button type="button" data-toggle="offcanvas" class="btn btn-outline-primary"> <i class="fa fa-align-left mr-2"></i>Menu</button>
-            <h1 class="small-navbar-heading"> <a href="index.html">Creative </a></h1>
+            <h1 class="small-navbar-heading"> <a href="index.html">Enzo Scalone </a></h1>
           </div>
           <div class="row">
             <div class="col-xl-10">
               <div class="content-column-content">
-                <h1>Shooter multijugador</h1>
-                <p class="lead">Un simple juego multijugador basado en tecnología web que hice hace tiempo, para jugar con amigos. Utilicé Java SE del lado del servidor, y javascript plano en el navegador</p>
+                <h1>Smoothed Particle Hydrodynamics</h1>
+                <p class="lead">Siempre me asombró la forma en que las computadoras simulan la física de los fluidos y cuerpos rígidos. Para divertirme un poco, implementé SPH en Java, utilizando multithreading.</p>
                 
-                <iframe width="760" height="415" src="https://www.youtube.com/embed/Sk0q2BUtvR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5GeFn-Uwx0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <br>
-                  <p>Este juego lo realicé utilizando Java SE para el servidor y Javascript del lado del cliente, junto con la arquitectura “Entity Component System” y un poco de álgebra lineal para realizar la “máscara de luz”, la cual se necesitan emitir rayos y calcular la intersección en cada extremo de cada pared, así como la colisión entre los jugadores, paredes y proyectiles. <br> El servidor lo tenía publicado en una Raspberry PI 3, y el juego se jugaba simplemente desde el navegador. 
-                  </p>
+                  <p>Simulación SPH desarrollada con Java, utilizando hilos para paralelizar el procesamiento del cálculo físico de las partículas. En la simulación se muestra el comportamiento con diferentes configuraciones de viscosidad.</p>
+                  
               </div>
             </div>
           </div>
@@ -92,9 +92,9 @@
   <script src="js/visits.js"></script>
   <script type="text/javascript">
     //Mi contador de visitas enzomatic
-    hitVisit("2d_shooter");
+    hitVisit("sph");
     setInterval(() => {
-       hitVisit("2d_shooter");
+       hitVisit("sph");
     }, 10000)
  </script>
 </body>

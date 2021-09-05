@@ -68,13 +68,26 @@
           <div class="row">
             <div class="col-xl-10">
               <div class="content-column-content">
-                <h1>Shooter multijugador</h1>
-                <p class="lead">Un simple juego multijugador basado en tecnología web que hice hace tiempo, para jugar con amigos. Utilicé Java SE del lado del servidor, y javascript plano en el navegador</p>
+                <h1>Entrando en MMORPGs</h1>
+                <p class="lead">Desde que era chico, siempre me gustaron los juegos MMORPGs. Siempre me pregunté cómo funcionaban, así que hice uno. Bueno... un prototipo funcional para ser exacto. Hecho con Java SE, utilizando una arquitectura "Entity Component System".</p>
                 
-                <iframe width="760" height="415" src="https://www.youtube.com/embed/Sk0q2BUtvR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rGABtuBCetk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <br>
-                  <p>Este juego lo realicé utilizando Java SE para el servidor y Javascript del lado del cliente, junto con la arquitectura “Entity Component System” y un poco de álgebra lineal para realizar la “máscara de luz”, la cual se necesitan emitir rayos y calcular la intersección en cada extremo de cada pared, así como la colisión entre los jugadores, paredes y proyectiles. <br> El servidor lo tenía publicado en una Raspberry PI 3, y el juego se jugaba simplemente desde el navegador. 
-                  </p>
+                <p>Existen miles de motores de desarrollo de videojuegos, pero nada mejor que hacerlo de forma nativa en JAVA, de esta forma se pueden presentar mejores retos y desafíos de los que se puede aprender mucho. </p>
+
+                <p>Para este juego, utilicé la librería gráfica LibGdx, y una arquitectura de desarrollo de videojuegos llamada “Entity Component System”. </p>
+                
+                <p>Al ser un juego multijugador, requiere un servidor centralizado. Por lo que utilicé mi Raspberry PI 3 con Ubuntu Server para servirlo. Dicho servidor lo realicé, así como el mismo juego, en Java.</p>
+                
+                <p>La comunicación entre dichos componentes, fué mediante Sockets nativos de java. </p>
+                <br>
+                <h2>Sistema de scripting</h2>
+                <p> Desarrollé un sistema de scripting para poder darle inteligencia a distintas entidades. En este caso, un NPC “Leñador” el cual solo se encarga de cortar árboles. Utilizando el mecanismo multihilo de pathfinding que implementé, buscan su próximo destino (árbol) y comienzan a talarlo. </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rrdkTJd_J78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br><br>
+                <h2>Test de stress</h2>
+                <p>Una de las tareas era optimizar el uso del CPU y el flujo de datos entre distintos clientes, ya que el servidor… Era un raspberry. Para ello agregue varios de cientos de “caminantes”, y analicé los recursos utilizados por el servidor.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/i8Oq8FcPwqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -92,9 +105,9 @@
   <script src="js/visits.js"></script>
   <script type="text/javascript">
     //Mi contador de visitas enzomatic
-    hitVisit("2d_shooter");
+    hitVisit("mmorpg");
     setInterval(() => {
-       hitVisit("2d_shooter");
+       hitVisit("mmorpg");
     }, 10000)
  </script>
 </body>
